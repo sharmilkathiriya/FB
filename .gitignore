@@ -43,7 +43,7 @@ TEST*.xml
 Thumbs.db
 
 # Applications
-*.app
+*.index
 *.exe
 *.war
 
