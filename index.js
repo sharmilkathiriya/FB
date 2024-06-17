@@ -27,13 +27,12 @@
 // });
 //
 // export default index;
-import dotenv from "dotenv";
-import express from "express";
-import bodyParser from "body-parser";
-import mongoose from "mongoose";
-import cors from "cors";
+require("dotenv").config();
+const express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const cors = require("cors");
 
-dotenv.config();
 const server = express();
 const PORT = 8000;
 
@@ -47,6 +46,6 @@ server.get("/", (req, res) => res.send("<h1>Api Run</h1>"));
 const option = { useNewUrlParser: true, useUnifiedTopology: true };
 mongoose.connect("mongodb://localhost:27017/test", option)
     .then(() => {
-      server.listen(PORT, () => console.log(`Server Start ${PORT}`));
+        server.listen(PORT, () => console.log(`Server Start ${PORT}`));
     })
     .catch(err => console.error("MongoDB connection error:", err));

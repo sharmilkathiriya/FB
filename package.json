@@ -2,28 +2,18 @@
   "name": "food-billing-be",
   "version": "1.0.0",
   "description": "The ultimate solution for seamless food menu organization, customer service, and billing management.",
-  "main": "server.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jayesh Mungara",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "express-rate-limit": "^7.3.1",
-    "helmet": "^7.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.4.1",
-    "mongoose-to-swagger": "^1.5.1",
-    "body-parser": "^1.20.0",
-    "nodemon": "^3.1.3",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1",
-    "zod": "^3.23.8"
+    "body-parser": "^1.19.1"
   }
 }
