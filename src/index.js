@@ -20,5 +20,10 @@ index.use(limiter);
 index.get('/', (req, res) =>{
   res.send('Welcome to the server')
 })
+const PORT = process.env.PORT || 5000;
+
+index.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 export default index;
