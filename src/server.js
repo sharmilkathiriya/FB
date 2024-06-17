@@ -1,5 +1,5 @@
 // src/server.js
-import index from './index.js';
+import index from '../index.js';
 
 const PORT = process.env.PORT || 5000;
 
